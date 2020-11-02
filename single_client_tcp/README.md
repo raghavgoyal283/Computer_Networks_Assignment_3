@@ -20,6 +20,13 @@
 2. Then run the *tcp_client.py* file using the command `python3 tcp_client.py`. This will start the client process. Enter the name of the book to download when prompted.
 3. The book (if found) will be downloaded in the *client_downloads* folder
 
+<br>
+
+## Variable parameters
+* server_ip: This varibale corresponds to the IP address of the server
+* server_port: This This varibale corresponds to the port no. of the server
+* nagle_disable: Indicates whether Nagle's algorithm is disabled or not. Set to 1 if you want to disable Nagle's Algorithm.
+* delayed_ack_disable: Indicates whether Delayed Acks are disabled or not. Set to 1 if you want to disable Delayed Acks.
 
 
 

@@ -5,7 +5,7 @@ import socket
 import time
 
 #nagle and delayed acks
-nagle_disable = 0
+nagle_disable = 1
 delayed_ack_disable = 0
 
 print("Client nagle disable: %d" % nagle_disable)

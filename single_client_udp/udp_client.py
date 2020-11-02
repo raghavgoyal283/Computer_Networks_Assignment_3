@@ -4,22 +4,12 @@ import os
 import socket
 import time
 
-#log file
-# sys.stdout = open('diff_buffer_log.txt', 'a')
-
-#testing different buffer sizes
-diff_buffer_sizes = 0
-
 #settings
 protocol = "udp"
 server_port = 6000 # server port no
 server_ip = "10.0.2.15" #server ip address
-# server_ip = "192.168.56.102" #server ip address
 server_address = (server_ip, server_port)
-if (diff_buffer_sizes):
-    buffer_size = int(eval(sys.argv[1]))
-else:
-    buffer_size = 1
+buffer_size = 32
 max_book_name_size = 50 #no of characters
 relative_path_to_client_downloads = "client_downloads"
 
@@ -59,15 +49,6 @@ if book_found:
             book_name=book_name.strip(), 
             protocol=protocol.upper(),
             pid=os.getpid(),
-            extension="txt"
-        )
-
-    if (diff_buffer_sizes):
-        book_save_path = "{path}/{book_name}-{protocol}-{buffer_size}.{extension}".format(
-            path="diff_buffer", 
-            book_name=book_name.strip(), 
-            protocol=protocol.upper(),
-            buffer_size=buffer_size,
             extension="txt"
         )
 

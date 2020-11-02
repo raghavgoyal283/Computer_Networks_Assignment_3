@@ -6,7 +6,7 @@ import time
 
 #nagle and delayed acks
 nagle_disable = 0
-delayed_ack_disable = 0
+delayed_ack_disable = 1
 
 print("Server nagle disable: %d" % nagle_disable)
 print("Server delayed_ack disable: %d" % delayed_ack_disable)

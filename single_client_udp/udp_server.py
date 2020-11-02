@@ -4,21 +4,11 @@ import os
 import socket                                         
 import time
 
-#log file
-# sys.stdout = open('diff_buffer_log.txt', 'a')
-
-#testing different buffer sizes
-diff_buffer_sizes = 0
-
 #settings
 protocol = "udp"
 server_port = 6000 # server port no
 server_ip = "10.0.2.15" #server ip address
-# server_ip = "192.168.56.102" #server ip address
-if (diff_buffer_sizes):
-    buffer_size = int(eval(sys.argv[1]))
-else:
-    buffer_size = 1
+buffer_size = 32
 max_book_name_size = 50 #no of characters
 relative_path_to_server_storage = "server_storage"
 relative_path_to_books_list = relative_path_to_server_storage + "/list.txt" 
