@@ -30,7 +30,7 @@ Note
 ===
 * __Before running any code file inside any of directories, make sure to first naviagte into that  directory in your terminal and then run the execution command to avoid any path conflicts__
 
-* Navigate into the specific directories for specific instructions to run the code
+* __Navigate into the specific directories for specific instructions to run the code__
 
 <br>
 <br>
