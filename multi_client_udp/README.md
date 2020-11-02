@@ -1,4 +1,4 @@
-# Multi client TCP
+# Multi client UDP
 
 ## Code structure
 
@@ -10,14 +10,14 @@
     * The files downloaded by the client are stored in this folder 
     * The name  format for the downloaded file is: *"Bookname-Protocol-Process_id.txt"*
 
-* `tcp_server.py`: Program file containing the server side code
-* `tcp_client.py`: Program file containing the client side code
+* `udp_server.py`: Program file containing the server side code
+* `udp_client.py`: Program file containing the client side code
 
 <br>
 
 ## Instructions for running code
-1. First run the *tcp_server.py* file using the command `python3 tcp_server.py`. This will start the server. The server will keep on running and can accept simultaneous requests from multiple clients
-2. Then run the *tcp_client.py* file using the command `python3 tcp_client.py`. This will start the first client process. Enter the name of the book to download when prompted. On hitting enter the server will be prompted to deliver the book to the first client
+1. First run the *tcp_server.py* file using the command `python3 udp_server.py`. This will start the server. The server will keep on running and can accept simultaneous requests from multiple clients
+2. Then run the *tcp_client.py* file using the command `python3 udp_client.py`. This will start the first client process. Enter the name of the book to download when prompted. On hitting enter the server will be prompted to deliver the book to the first client
 3. While the first client process is in progress, start another client process using the same procedure as in 2. Now, both the processes will run simultaneously and download books from the server
 4. To observe the simultaneous execution of client processes, it is better to set the buffer sizes to a low value on both the client and server side. Also, use a large file for download, for eg: A Dictionary of Cebuano Visayan or Essays of Michel de Montaigne
 3. The books (if found) will be downloaded in the *client_downloads* folder and the client processes will terminate

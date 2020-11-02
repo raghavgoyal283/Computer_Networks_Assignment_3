@@ -10,9 +10,8 @@ import _thread
 
 #settings
 protocol = "udp"
-server_port = 12345 # server port no
+server_port = 6000 # server port no
 server_ip = "10.0.2.15" #server ip address
-# server_ip = "192.168.56.102" #server ip address
 buffer_size = 32
 max_book_name_size = 50 #no of characters
 relative_path_to_server_storage = "server_storage"

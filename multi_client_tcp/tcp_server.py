@@ -5,9 +5,6 @@ import socket
 import time
 import _thread
 
-#log file
-# sys.stdout = open("log.txt","a")
-
 #settings
 protocol = "tcp"
 server_port = 12345 # server port no
