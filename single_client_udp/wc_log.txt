@@ -1,0 +1,7 @@
+  2855  21702 131072 diff_buffer/A Dictionary of Cebuano Visayan-TCP-32768.txt
+0 0 0 diff_buffer/A Dictionary of Cebuano Visayan-TCP-65536.txt
+  2853  21692 131000 diff_buffer/A Dictionary of Cebuano Visayan-TCP-65500.txt
+  48102  424015 2433024 diff_buffer/A Dictionary of Cebuano Visayan-TCP-1024.txt
+  79259  690917 3968546 diff_buffer/A Dictionary of Cebuano Visayan-TCP-32.txt
+  80346  697135 4006603 diff_buffer/A Dictionary of Cebuano Visayan-TCP-1.txt
+ 112038  972375 5587330 server_storage/40074-0.txt
