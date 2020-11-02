@@ -4,12 +4,9 @@ import os
 import socket
 import time
 
-#log file
-# sys.stdout = open('log.txt', 'a')
-
 #settings
 protocol = "udp"
-server_port = 12345 # server port no
+server_port = 6000 # server port no
 server_ip = "10.0.2.15" #server ip address
 server_address = (server_ip, server_port)
 buffer_size = 32
