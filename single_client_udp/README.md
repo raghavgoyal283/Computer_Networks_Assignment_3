@@ -10,6 +10,13 @@
     * The files downloaded by the client are stored in this folder 
     * The name  format for the downloaded file is: *"Bookname-Protocol-Process_id.txt"*
 
+* `files_related_to_different_buffer_sizes_experiments`
+    * Contains files for *Q3 (c)* (relevant files hyperlinked in report). 
+    * `files_received_by_client`: Contains the files received by client from server for different buffer sizes. Buffer size suffixed in the file name
+    * `files_generated_using_diff_command`: 
+        * Contains the differences between the received file and the original file. 
+        * Contains the output of the bash command: `diff received_file  original_file` for every entry
+
 * `udp_server.py`: Program file containing the server side code
 * `udp_client.py`: Program file containing the client side code
 

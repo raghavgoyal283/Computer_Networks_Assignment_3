@@ -1,6 +1,17 @@
 # Computer_Networks_Assignment_3
 This repository contains the code for assignment 3 of the course: Computer Networks CS 433
 
+<br>
+
+Important Note
+===
+* __Before running any code file inside any of directories, make sure to first naviagte into that  directory in your terminal and then run the execution command to avoid any path conflicts__
+
+* __Navigate into the specific directories to find *README files* containing case specific instructions to run the code__
+
+<br>
+<br>
+
 Code structure
 =====
 
@@ -26,15 +37,6 @@ The repository contains 5 directories:
 <br>
 <!-- <br> -->
 
-Note
-===
-* __Before running any code file inside any of directories, make sure to first naviagte into that  directory in your terminal and then run the execution command to avoid any path conflicts__
-
-* __Navigate into the specific directories to find *README files* containing specific instructions to run the code__
-
-<br>
-<br>
-<!-- <br> -->
 
 Machine and Programming Language used
 ====
