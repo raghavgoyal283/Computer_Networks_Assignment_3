@@ -31,6 +31,7 @@ book_name = input()
 #start timer
 start_time = time.time()*1000.0
 
+#Send book name to server
 client_socket.sendto(book_name.encode("utf-8"), server_address)
 
 # message indicating book found or not
