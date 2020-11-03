@@ -9,9 +9,9 @@ protocol = "udp"
 server_port = 6000 # server port no
 server_ip = "10.0.2.15" #server ip address
 server_address = (server_ip, server_port)
-buffer_size = 32
-max_book_name_size = 50 #no of characters
-relative_path_to_client_downloads = "client_downloads"
+buffer_size = 32 #buffer size
+max_book_name_size = 50 #max no of characters in book name
+relative_path_to_client_downloads = "client_downloads" #storage path for client downloads
 
 # print buffer size
 print("Client buffer size: %d" % buffer_size)
@@ -44,6 +44,8 @@ else:
 
 # downloading book from server
 if book_found:
+
+    #path where downloaded book is saved
     book_save_path = "{path}/{book_name}-{protocol}-{pid}.{extension}".format(
             path=relative_path_to_client_downloads, 
             book_name=book_name.strip(), 
@@ -52,12 +54,15 @@ if book_found:
             extension="txt"
         )
 
+    #file handler for writing received data from server into the book storage path
     book_writer = open(book_save_path,"wb")
 
     while True:
         try:
             client_socket.settimeout(0.1)
             # print(time.time()*1000-start_time)
+
+            #receive data from server
             data, _ = client_socket.recvfrom(buffer_size)
 
             if (not data):
@@ -72,6 +77,7 @@ if book_found:
 # client_socket.shutdown(socket.SHUT_RDWR)
 client_socket.close()
 
+#stop timer
 end_time = time.time()*1000.0
 
 print("Time taken by {}: {:.5f} ms".format(protocol,end_time-start_time))
